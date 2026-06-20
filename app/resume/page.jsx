@@ -1,14 +1,23 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaAws, FaDocker } from "react-icons/fa";
 import { FaWebflow } from "react-icons/fa6";
-import { SiTailwindcss, SiNextdotjs, SiStrapi } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiStrapi,
+  SiTypescript,
+  SiMongodb,
+  SiPostgresql,
+  SiRedis,
+  SiExpress,
+} from "react-icons/si";
 
 // About Data
 const about = {
   title: "About me",
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit,
-  Porro ut nulla voluptatibus provident suscipit.`,
+  description:
+    "Full-Stack Developer with 3+ years of experience building scalable web applications, REST APIs, and production-grade backend systems. Experienced in taking projects from architecture and API design through to deployment and performance optimization.",
   info: [
     {
       fieldName: "Name",
@@ -16,11 +25,11 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+91)9967647164",
+      fieldValue: "(+91) 9967647164",
     },
     {
       fieldName: "Experience",
-      fieldValue: "1+ year",
+      fieldValue: "3+ years",
     },
     {
       fieldName: "Nationality",
@@ -45,18 +54,18 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit,
-  Porro ut nulla voluptatibus provident suscipit.`,
+  description:
+    "Promoted from intern to Full-Stack Developer within 3 months. Independently owned architecture, development, and deployment of multiple client projects end-to-end.",
   items: [
     {
       company: "Pardy Panda Studios",
-      position: "Full Stack Developer",
-      duration: "2023 - Present",
+      position: "Full-Stack Developer",
+      duration: "Feb 2023 – Present",
     },
     {
       company: "Pardy Panda Studios",
-      position: "Web - Intern",
-      duration: "2023",
+      position: "Software Development Intern",
+      duration: "Feb 2023",
     },
   ],
 };
@@ -65,23 +74,23 @@ const experience = {
 const education = {
   icon: "/assets/resume/badge.svg",
   title: "My Education",
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit,
-  Porro ut nulla voluptatibus provident suscipit.`,
+  description:
+    "Bachelor of Technology in Computer Science from Parul University, Vadodara. Strong foundation in software engineering principles and computer science fundamentals.",
   items: [
     {
       institution: "Parul University",
-      degree: "B.tech Cse",
-      duration: "2019 - 2023",
+      degree: "B.Tech in Computer Science (CGPA: 7.65)",
+      duration: "2019 – 2023",
     },
     {
-      institution: "Nmfc",
+      institution: "NMFC",
       degree: "12th Science",
-      duration: "2017 - 2019",
+      duration: "2017 – 2019",
     },
     {
-      institution: "J.B Khot High School",
-      degree: "10th",
-      duration: "2007 - 2017",
+      institution: "J.B. Khot High School",
+      degree: "10th Standard",
+      duration: "2007 – 2017",
     },
   ],
 };
@@ -89,45 +98,25 @@ const education = {
 // Skills Data
 const skills = {
   title: "My Skills",
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit,
-  Porro ut nulla voluptatibus provident suscipit.`,
+  description:
+    "Proficient across the full stack — from pixel-perfect frontends to scalable backend systems, databases, and cloud infrastructure.",
   skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "Css 3",
-    },
-    {
-      icon: <FaJs />,
-      name: "JavaScript",
-    },
-    {
-      icon: <FaReact />,
-      name: "React.js",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "Next.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "TailwindCss",
-    },
-    {
-      icon: <FaWebflow />,
-      name: "WebFlow",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
-    {
-      icon: <SiStrapi />,
-      name: "Strapi.js",
-    },
+    { icon: <FaHtml5 />, name: "HTML 5" },
+    { icon: <FaCss3 />, name: "CSS 3" },
+    { icon: <FaJs />, name: "JavaScript" },
+    { icon: <SiTypescript />, name: "TypeScript" },
+    { icon: <FaReact />, name: "React.js" },
+    { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+    { icon: <FaWebflow />, name: "Webflow" },
+    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <SiExpress />, name: "Express.js" },
+    { icon: <SiStrapi />, name: "Strapi.js" },
+    { icon: <SiMongodb />, name: "MongoDB" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
+    { icon: <SiRedis />, name: "Redis" },
+    { icon: <FaDocker />, name: "Docker" },
+    { icon: <FaAws />, name: "AWS" },
   ],
 };
 

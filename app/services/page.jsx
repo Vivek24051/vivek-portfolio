@@ -6,25 +6,32 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Full-Stack Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eum unde vitae cupiditate ut tempore aliquid at.",
+      "End-to-end web application development using React.js, Next.js, Node.js, and TypeScript — from architecture and API design through to production deployment.",
     href: "",
   },
-  // {
-  //   num: "02",
-  //   title: "Web Development",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eum unde vitae cupiditate ut tempore aliquid at.",
-  //   href: "",
-  // },
-  // {
-  //   num: "03",
-  //   title: "Web Development",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eum unde vitae cupiditate ut tempore aliquid at.",
-  //   href: "",
-  // },
+  {
+    num: "02",
+    title: "REST API Development",
+    description:
+      "Scalable, well-documented REST APIs with JWT auth, role-based access control, and optimized database queries using MongoDB, PostgreSQL, and Redis.",
+    href: "",
+  },
+  {
+    num: "03",
+    title: "CMS Integration",
+    description:
+      "Headless CMS integration with Strapi and Medusa v2, enabling non-technical teams to manage content independently and reducing developer dependency for routine updates.",
+    href: "",
+  },
+  {
+    num: "04",
+    title: "Cloud Deployment & DevOps",
+    description:
+      "Production deployments on AWS EC2, AWS Lightsail, and GCP using Docker, PM2, GitLab CI/CD pipelines, and Cloudflare Workers for edge performance.",
+    href: "",
+  },
 ];
 
 const Services = () => {

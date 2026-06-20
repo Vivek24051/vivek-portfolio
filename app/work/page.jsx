@@ -13,44 +13,105 @@ import {
 } from "@/components/ui/tooltip";
 import Link from "next/link";
 import Image from "next/image";
-import { list } from "postcss";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "fullstack",
+    title: "DocSign",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique error et quibusdam nobis soluta.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+      "Full-stack document signing platform. Features AI-powered document summaries via Google Gemini API, drag-and-drop signature positioning, live search & filtering, dashboard statistics, and a public verification link system with one-click copy.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Gemini AI" },
+      { name: "MongoDB" },
+    ],
+    image: "/assets/work/docsign.png",
+    live: "https://docsign-hkov.vercel.app",
+    github: "https://github.com/Vivek24051/docsign",
   },
   {
     num: "02",
     category: "fullstack",
-    title: "project 2",
+    title: "Aasha",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique error et quibusdam nobis soluta.",
-    stack: [{ name: "React.Js" }, { name: "TailwindCss" }, { name: "Node.Js" }],
+      "5-module employer management portal (Dashboard, Jobs, Candidates, Connectors, Account Settings) built from scratch as sole developer. Reduced hiring workflow steps by 40% with a reusable adapter/proxy layer for Swagger-documented APIs.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "React Query" },
+    ],
     image: "/assets/work/thumb2.png",
     live: "",
     github: "",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 3",
+    category: "backend",
+    title: "Storibble",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione similique error et quibusdam nobis soluta.",
+      "Backend features for a social storytelling mobile app — deep link generation, Admin Panel APIs with role-based access control, and Firebase FCM push notifications on a dual-versioned API codebase (v1 + v2) with zero downtime.",
     stack: [
-      { name: "Next.js" },
-      { name: "TailwindCss" },
-      { name: "JavaScript" },
+      { name: "Node.js" },
+      { name: "TypeScript" },
+      { name: "Express.js" },
+      { name: "MongoDB" },
+      { name: "AWS EC2" },
+    ],
+    image: "/assets/work/thumb3.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "04",
+    category: "fullstack",
+    title: "Raas",
+    description:
+      "Full-stack fashion e-commerce platform for the UAE market. Implemented custom order rejection with partial Stripe refunds, invoice PDF generation, real-time SSE notifications, OTP auth, and Meilisearch integration.",
+    stack: [
+      { name: "Node.js" },
+      { name: "TypeScript" },
+      { name: "Medusa v2" },
+      { name: "PostgreSQL" },
+      { name: "Docker" },
     ],
     image: "/assets/work/thumb1.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "05",
+    category: "fullstack",
+    title: "KD International",
+    description:
+      "TDS document processing system with Next.js frontend and Strapi CMS backend. Automated approval and email delivery workflows reduced manual admin effort by 60%.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Strapi.js" },
+      { name: "MySQL" },
+    ],
+    image: "/assets/work/thumb2.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "06",
+    category: "fullstack",
+    title: "Surgiyo",
+    description:
+      "Medical video processing system using Google Cloud Functions and Video Transcoder API for handling 100MB+ files, with a React.js admin portal and Webflow marketing site.",
+    stack: [
+      { name: "Node.js" },
+      { name: "React.js" },
+      { name: "Firebase" },
+      { name: "MongoDB" },
+      { name: "GCP" },
+    ],
+    image: "/assets/work/thumb3.png",
     live: "",
     github: "",
   },

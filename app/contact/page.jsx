@@ -19,17 +19,17 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+91)8282659402",
+    description: "(+91) 9967647164",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "your@gmail.com",
+    description: "viveklimbachiya999@gmail.com",
   },
   {
     icon: <FaMapMarkedAlt />,
-    title: "Address",
-    description: "123, abc",
+    title: "Location",
+    description: "Vadodara, India",
   },
 ];
 
@@ -50,8 +50,9 @@ const Contact = () => {
             <form className='flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl'>
               <h3 className='text-4xl text-accent'>Let's work together</h3>
               <p className='text-white/60'>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
-                dignissimos eligendi aliquid inventore? Sunt?
+                Have a project in mind or want to discuss an opportunity? I&apos;d
+                love to hear from you. Drop a message and I&apos;ll get back to you
+                within 24 hours.
               </p>
               {/* input */}
               <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
@@ -68,7 +69,11 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value='est'>Web Development</SelectItem>
+                    <SelectItem value='fullstack'>Full-Stack Web Development</SelectItem>
+                    <SelectItem value='api'>REST API Development</SelectItem>
+                    <SelectItem value='cms'>CMS Integration</SelectItem>
+                    <SelectItem value='devops'>Cloud Deployment & DevOps</SelectItem>
+                    <SelectItem value='other'>Other</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>

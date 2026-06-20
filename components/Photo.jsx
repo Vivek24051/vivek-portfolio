@@ -12,27 +12,31 @@ const Photo = () => {
           opacity: 1,
           transition: { delay: 2, duration: 0.4, ease: "easeIn" },
         }}
+        className='relative flex items-center justify-center'
       >
-        {/* Image */}
+        {/* Glow behind photo */}
+        <div className='absolute w-[240px] h-[240px] xl:w-[390px] xl:h-[390px] rounded-full bg-accent/20 blur-3xl' />
+
+        {/* Profile image */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className='w-[298px] h-[298px] xl:w-[458px] xl:h-[458px] mix-blend-lighten absolute'
+          className='w-[278px] h-[278px] xl:w-[438px] xl:h-[438px] rounded-full overflow-hidden absolute z-10'
         >
           <Image
-            src='/assets/images.png'
+            src='/assets/vivek.jpg'
             priority
             quality={100}
             fill
-            alt=''
-            className='object-contain'
+            alt='Vivek Limbachiya'
+            className='object-cover object-center'
           />
         </motion.div>
 
-        {/* circle */}
+        {/* Animated circle border */}
         <motion.svg
           className='w-[300px] xl:w-[466px] h-[300px] xl:h-[466px]'
           fill='transparent'
