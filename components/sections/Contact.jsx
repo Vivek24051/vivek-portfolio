@@ -36,12 +36,14 @@ const info = [
 const Contact = () => {
   return (
     <motion.section
+      id='contact'
       initial={{ opacity: 0 }}
-      animate={{
+      whileInView={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { duration: 0.4, ease: "easeIn" },
       }}
-      className='py-6'
+      viewport={{ once: true, amount: 0.2 }}
+      className='py-16 xl:py-24 scroll-mt-24 xl:scroll-mt-32'
     >
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-[30px]'>

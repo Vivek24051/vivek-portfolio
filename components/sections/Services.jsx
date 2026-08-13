@@ -8,7 +8,7 @@ const services = [
     num: "01",
     title: "Full-Stack Web Development",
     description:
-      "End-to-end web application development using React.js, Next.js, Node.js, and TypeScript — from architecture and API design through to production deployment.",
+      "End-to-end web application development using React.js, Next.js, Node.js, and TypeScript — from architecture and API design through to deployment.",
     href: "",
   },
   {
@@ -36,21 +36,22 @@ const services = [
 
 const Services = () => {
   return (
-    <section className='min-h-[80vh] flex flex-col justify-center py-12 xl:py-0'>
+    <section id='services' className='min-h-[80vh] flex flex-col justify-center py-16 xl:py-24 scroll-mt-24 xl:scroll-mt-32'>
       <div className='container mx-auto'>
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{
+          whileInView={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+            transition: { duration: 0.4, ease: "easeIn" },
           }}
-          className='grid grid-cols-1 md:grid-cols-2 gap-[60px]'
+          viewport={{ once: true, amount: 0.2 }}
+          className='grid grid-cols-1 md:grid-cols-2 gap-x-[60px] gap-y-[80px]'
         >
           {services.map((service, index) => {
             return (
               <div
                 key={index}
-                className='flex-1 flex flex-col justify-center gap-6 group'
+                className='flex-1 flex flex-col justify-center gap-8 group'
               >
                 {/* Top */}
                 <div className='w-full flex justify-between items-center'>

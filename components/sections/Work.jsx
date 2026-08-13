@@ -35,6 +35,23 @@ const projects = [
   {
     num: "02",
     category: "fullstack",
+    title: "Dynamic PageBuilder",
+    description:
+      "Fully dynamic, CMS-driven page built with Next.js and Strapi — every heading, image, CTA, footer link, and SEO tag is managed through Strapi's Dynamic Zones and rendered via a reorderable page-builder. Reordering or removing a section in the CMS reflects live instantly with zero code changes, backed by a Zod-validated, spam-guarded newsletter API and on-demand ISR via webhook.",
+    stack: [
+      { name: "Next.js" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+      { name: "Strapi" },
+      { name: "PostgreSQL" },
+    ],
+    image: "/assets/work/strapiWebImage.jpg",
+    live: "https://strapi-nextjs-pagebuilder-web.vercel.app/",
+    github: "https://github.com/Vivek24051/strapi-nextjs-pagebuilder",
+  },
+  {
+    num: "03",
+    category: "fullstack",
     title: "Aasha",
     description:
       "5-module employer management portal (Dashboard, Jobs, Candidates, Connectors, Account Settings) built from scratch as sole developer. Reduced hiring workflow steps by 40% with a reusable adapter/proxy layer for Swagger-documented APIs.",
@@ -49,7 +66,7 @@ const projects = [
     github: "",
   },
   {
-    num: "03",
+    num: "04",
     category: "backend",
     title: "Storibble",
     description:
@@ -66,7 +83,7 @@ const projects = [
     github: "",
   },
   {
-    num: "04",
+    num: "05",
     category: "fullstack",
     title: "Raas",
     description:
@@ -83,7 +100,7 @@ const projects = [
     github: "",
   },
   {
-    num: "05",
+    num: "06",
     category: "fullstack",
     title: "KD International",
     description:
@@ -99,7 +116,7 @@ const projects = [
     github: "",
   },
   {
-    num: "06",
+    num: "07",
     category: "fullstack",
     title: "Surgiyo",
     description:
@@ -129,12 +146,14 @@ const Work = () => {
 
   return (
     <motion.section
+      id='work'
       initial={{ opacity: 0 }}
-      animate={{
+      whileInView={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { duration: 0.4, ease: "easeIn" },
       }}
-      className='min-h-[80vh] flex flex-col justify-center py-12 xl:px-0'
+      viewport={{ once: true, amount: 0.2 }}
+      className='min-h-[80vh] flex flex-col justify-center py-16 xl:py-24 xl:px-0 scroll-mt-24 xl:scroll-mt-32'
     >
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row xl:gap-[30px]'>
@@ -148,6 +167,8 @@ const Work = () => {
               <h2 className='text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize'>
                 {project.category} project
               </h2>
+              {/* project title */}
+              <h3 className='text-2xl text-accent'>{project.title}</h3>
               {/* project description */}
               <p className='text-white/60'>{project.description}</p>
               {/* stack */}

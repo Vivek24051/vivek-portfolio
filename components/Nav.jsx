@@ -1,46 +1,47 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useActiveSection } from "@/hooks/useActiveSection";
 
 const links = [
   {
-    name: "Homes",
-    path: "/",
-  },
-  {
-    name: "services",
-    path: "/services",
-  },
-  {
-    name: "resume",
-    path: "/resume",
+    name: "Home",
+    id: "home",
   },
   {
     name: "work",
-    path: "/work",
+    id: "work",
+  },
+  {
+    name: "resume",
+    id: "resume",
+  },
+  {
+    name: "services",
+    id: "services",
   },
   {
     name: "contact",
-    path: "/contact",
+    id: "contact",
   },
 ];
+
+const ids = links.map((link) => link.id);
+
 const Nav = () => {
-  const pathName = usePathname();
-  console.log("🚀 ~ Nav ~ pathName:", pathName);
+  const activeId = useActiveSection(ids);
   return (
     <nav className='flex gap-8'>
       {links.map((link, index) => {
         return (
-          <Link
-            href={link.path}
+          <a
+            href={`#${link.id}`}
             key={index}
             className={`${
-              link.path === pathName && "text-accent border-b-2 border-accent"
+              link.id === activeId && "text-accent border-b-2 border-accent"
             } capitalize font-medium hover:text-accent transition-all`}
           >
             {link.name}
-          </Link>
+          </a>
         );
       })}
     </nav>

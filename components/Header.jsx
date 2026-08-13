@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Button } from "./ui/button";
 
 // Components
@@ -7,20 +6,20 @@ import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
-    <header className='py-8 xl:py-12 text-white'>
+    <header className='py-8 xl:py-12 text-white sticky top-0 z-50 bg-primary/80 backdrop-blur'>
       <div className='container mx auto flex justify-between items-center'>
         {/*Logo  */}
-        <Link href='/'>
+        <a href='#home'>
           <h1 className='text-4xl font-semibold'>
             Vivek<span className='text-accent'>.</span>
           </h1>
-        </Link>
+        </a>
         {/* desktop nav & hire me button */}
         <div className='hidden xl:flex items-center gap-8'>
           <Nav />
-          <Link href="/contact">
+          <a href="#contact">
             <Button>Hire me</Button>
-          </Link>
+          </a>
         </div>
 
         {/* Mobile nav */}
